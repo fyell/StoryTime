@@ -2,5 +2,30 @@ body {
     background-color: black;
     color: white;
     font-family: Helvetica, Sans-Serif;
-    font-size: 14pt; 
+    font-size: 10pt; 
 }
+
+.content {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+}
+
+.content input {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.inactive {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+audio { 
+    display: none;
+ }
