@@ -23,7 +23,7 @@ body {
 }
 
 .active {
-    display: block;
+    display: inline-block;
 }
 
 audio { 

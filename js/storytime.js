@@ -5,3 +5,8 @@ function swap(id1, id2) {
   currentElement.classList.add("inactive");
   nextElement.classList.add("active");
 }
+
+function playDrums() { 
+  var audio = document.getElementById("drums");
+  audio.play(); 
+} 

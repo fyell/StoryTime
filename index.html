@@ -26,22 +26,21 @@
       <br />
       <br />
       <form>
+          <input type="button" value="I guess" onclick="swap('scene2', 'ask')" />
+        <br />
+        <br />
         <input
           type="button"
           value="No. You're weird. Bye."
           onclick="swap('scene2', 'aww')"
         />
       </form>
-      <br />
-      <form>
-        <input type="button" value="I guess" onclick="swap('scene2', 'ask')" />
-      </form>
     </div>
     <div class="content inactive" id="aww">
       Aww ok :(
     </div>
     <div class="content inactive" id="ask">
-      Ask me something
+      I'm a sleek new machine learning artificially intelligent supercomputer. Ask me something.
       <br />
       <br />
       <form>
@@ -49,6 +48,13 @@
           type="button"
           value="What are you good at?"
           onclick="swap('ask', 'answer1')"
+        />
+        <br />
+        <br />
+        <input
+          type="button"
+          value="No thanks"
+          onclick="swap('ask', 'aww')"
         />
       </form>
     </div>
@@ -69,18 +75,25 @@
       <br />
       <br />
       <form>
+        <input type="button"
+        value="Wow you're right!"
+        onclick="swap('answer2', 'hehe')" />
+        <br />
+        <br />
         <input
           type="button"
           value="No! It's 121."
-          onclick="swap('answer2', 'answer3')"
+          onclick="swap('answer2', 'answer3'); playDrums()"
         />
       </form>
     </div>
     <div class="content inactive" id="answer3">
       It's 121
-      <audio controls autoplay>
-          <source src="resources/drums.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
+      <audio id="drums" preload="auto">
+        <source src="resources/drums.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="content inactive" id="hehe">
+      hehe
     </div>
 </html>
