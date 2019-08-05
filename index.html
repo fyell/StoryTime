@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
     <script src="js/storytime.js"></script>
     <title>Story Time</title>
   </head>
@@ -12,7 +13,6 @@
     
     <div class="content active" id="scene1">
       Hey!
-      <br />
       <br />
       <form>
         <input
@@ -26,10 +26,8 @@
     <div class="content inactive" id="scene2">
       Want to ask me a question?
       <br />
-      <br />
       <form>
           <input type="button" value="I guess" onclick="swap('scene2', 'ask')" />
-        <br />
         <br />
         <input
           type="button"
@@ -46,14 +44,12 @@
     <div class="content inactive" id="ask">
       I'm a sleek new machine learning artificially intelligent supercomputer. Ask me something.
       <br />
-      <br />
       <form>
         <input
           type="button"
           value="What are you good at?"
           onclick="swap('ask', 'answer1')"
         />
-        <br />
         <br />
         <input
           type="button"
@@ -65,7 +61,6 @@
 
     <div class="content inactive" id="answer1">
       I'm a fast learner!
-      <br />
       <br />
       <form>
         <input
@@ -79,12 +74,10 @@
     <div class="content inactive" id="answer2">
       65
       <br />
-      <br />
       <form>
         <input type="button"
         value="Wow you're right!"
         onclick="swap('answer2', 'hehe')" />
-        <br />
         <br />
         <input
           type="button"

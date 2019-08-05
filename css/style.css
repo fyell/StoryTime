@@ -1,31 +1,36 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: Helvetica, Sans-Serif;
-    font-size: 10pt; 
+  background-color: black;
+  color: white;
+  font-family: "DM Serif Text", serif;
+  font-size: 20pt;
 }
 
 .content {
-    left: 50%;
-    top: 50%;
-    position: absolute;
-    text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .content input {
-    background-color: black;
-    color: white;
-    border-color: white;
+  background-color: black;
+  color: white;
+  border-color: white;
+  font-size: 12pt;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .inactive {
-    display: none;
+  display: none;
 }
 
 .active {
-    display: inline-block;
+  display: inline-block;
 }
 
-audio { 
-    display: none;
- }
+audio {
+  display: none;
+}
